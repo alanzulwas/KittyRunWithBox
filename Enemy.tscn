@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Enemy.gd" type="Script" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 16, 32 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 100, 24 )
+
+[node name="Enemy" type="KinematicBody2D" groups=["Enemy"]]
+script = ExtResource( 1 )
+speed = 150
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="sprite" type="Node2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="sprite"]
+margin_left = -16.0
+margin_top = -32.0
+margin_bottom = 32.0
+mouse_filter = 2
+color = Color( 0.823529, 0.12549, 0.12549, 1 )
+
+[node name="ColorRect2" type="ColorRect" parent="sprite"]
+margin_top = -32.0
+margin_right = 16.0
+margin_bottom = -16.0
+mouse_filter = 2
+color = Color( 0.823529, 0.12549, 0.12549, 1 )
+
+[node name="DetectPlayer" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectPlayer"]
+scale = Vector2( 0.88, 1 )
+shape = SubResource( 2 )
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2( 16, 0 )
+
+[connection signal="body_entered" from="DetectPlayer" to="." method="_on_DetectPlayer_body_entered"]
