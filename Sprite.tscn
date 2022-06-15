@@ -11,6 +11,7 @@ extents = Vector2( 32, 32 )
 extents = Vector2( 35.5, 34.5 )
 
 [node name="CharacterPlayer" type="KinematicBody2D" groups=["Player"]]
+collision_mask = 4
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -34,4 +35,3 @@ margin_bottom = -48.0
 
 [connection signal="area_entered" from="Area2D" to="." method="_pintu_area_entered"]
 [connection signal="area_exited" from="Area2D" to="." method="_pintu_area_exited"]
-[connection signal="body_entered" from="Area2D" to="." method="_enemyBody_entered"]

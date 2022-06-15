@@ -28,6 +28,8 @@ position = Vector2( 320, 368 )
 
 [node name="Grounds" type="StaticBody2D" parent="Ground1"]
 position = Vector2( -304, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground1/Grounds"]
 margin_left = -16.0
@@ -41,6 +43,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds2" type="StaticBody2D" parent="Ground1"]
 position = Vector2( -272, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground1/Grounds2"]
 margin_left = -16.0
@@ -54,6 +58,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds3" type="StaticBody2D" parent="Ground1"]
 position = Vector2( -240, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground1/Grounds3"]
 margin_left = -16.0
@@ -67,6 +73,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds4" type="StaticBody2D" parent="Ground1"]
 position = Vector2( -208, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground1/Grounds4"]
 margin_left = -16.0
@@ -80,6 +88,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds5" type="StaticBody2D" parent="Ground1"]
 position = Vector2( -176, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground1/Grounds5"]
 margin_left = -16.0
@@ -93,6 +103,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds6" type="StaticBody2D" parent="Ground1"]
 position = Vector2( -144, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground1/Grounds6"]
 margin_left = -16.0
@@ -106,6 +118,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds7" type="StaticBody2D" parent="Ground1"]
 position = Vector2( -112, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground1/Grounds7"]
 margin_left = -16.0
@@ -119,6 +133,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds8" type="StaticBody2D" parent="Ground1"]
 position = Vector2( -80, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground1/Grounds8"]
 margin_left = -16.0
@@ -132,6 +148,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds9" type="StaticBody2D" parent="Ground1"]
 position = Vector2( -48, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground1/Grounds9"]
 margin_left = -16.0
@@ -145,6 +163,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds10" type="StaticBody2D" parent="Ground1"]
 position = Vector2( -16, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground1/Grounds10"]
 margin_left = -16.0
@@ -158,6 +178,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds11" type="StaticBody2D" parent="Ground1"]
 position = Vector2( 16, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground1/Grounds11"]
 margin_left = -16.0
@@ -171,6 +193,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds12" type="StaticBody2D" parent="Ground1"]
 position = Vector2( 48, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground1/Grounds12"]
 margin_left = -16.0
@@ -184,6 +208,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds13" type="StaticBody2D" parent="Ground1"]
 position = Vector2( 80, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground1/Grounds13"]
 margin_left = -16.0
@@ -197,6 +223,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds14" type="StaticBody2D" parent="Ground1"]
 position = Vector2( 112, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground1/Grounds14"]
 margin_left = -16.0
@@ -210,6 +238,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds15" type="StaticBody2D" parent="Ground1"]
 position = Vector2( 144, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground1/Grounds15"]
 margin_left = -16.0
@@ -223,6 +253,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds16" type="StaticBody2D" parent="Ground1"]
 position = Vector2( 176, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground1/Grounds16"]
 margin_left = -16.0
@@ -236,6 +268,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds17" type="StaticBody2D" parent="Ground1"]
 position = Vector2( 208, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground1/Grounds17"]
 margin_left = -16.0
@@ -249,6 +283,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds18" type="StaticBody2D" parent="Ground1"]
 position = Vector2( 240, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground1/Grounds18"]
 margin_left = -16.0
@@ -262,6 +298,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds19" type="StaticBody2D" parent="Ground1"]
 position = Vector2( 272, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground1/Grounds19"]
 margin_left = -16.0
@@ -275,6 +313,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds20" type="StaticBody2D" parent="Ground1"]
 position = Vector2( 304, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground1/Grounds20"]
 margin_left = -16.0
@@ -288,6 +328,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds21" type="StaticBody2D" parent="Ground1"]
 position = Vector2( 336, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground1/Grounds21"]
 margin_left = -16.0
@@ -301,6 +343,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds22" type="StaticBody2D" parent="Ground1"]
 position = Vector2( 368, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground1/Grounds22"]
 margin_left = -16.0
@@ -314,6 +358,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds23" type="StaticBody2D" parent="Ground1"]
 position = Vector2( 400, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground1/Grounds23"]
 margin_left = -16.0
@@ -327,6 +373,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds24" type="StaticBody2D" parent="Ground1"]
 position = Vector2( 432, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground1/Grounds24"]
 margin_left = -16.0
@@ -340,6 +388,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds25" type="StaticBody2D" parent="Ground1"]
 position = Vector2( 464, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground1/Grounds25"]
 margin_left = -16.0
@@ -353,6 +403,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds26" type="StaticBody2D" parent="Ground1"]
 position = Vector2( 496, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground1/Grounds26"]
 margin_left = -16.0
@@ -366,6 +418,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds27" type="StaticBody2D" parent="Ground1"]
 position = Vector2( 528, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground1/Grounds27"]
 margin_left = -16.0
@@ -379,6 +433,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds28" type="StaticBody2D" parent="Ground1"]
 position = Vector2( 560, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground1/Grounds28"]
 margin_left = -16.0
@@ -392,6 +448,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds29" type="StaticBody2D" parent="Ground1"]
 position = Vector2( 592, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground1/Grounds29"]
 margin_left = -16.0
@@ -405,6 +463,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds30" type="StaticBody2D" parent="Ground1"]
 position = Vector2( 624, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground1/Grounds30"]
 margin_left = -16.0
@@ -421,6 +481,8 @@ position = Vector2( 320, 576 )
 
 [node name="Grounds" type="StaticBody2D" parent="Ground2"]
 position = Vector2( -304, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground2/Grounds"]
 margin_left = -16.0
@@ -434,6 +496,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds2" type="StaticBody2D" parent="Ground2"]
 position = Vector2( -272, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground2/Grounds2"]
 margin_left = -16.0
@@ -447,6 +511,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds3" type="StaticBody2D" parent="Ground2"]
 position = Vector2( -240, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground2/Grounds3"]
 margin_left = -16.0
@@ -460,6 +526,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds4" type="StaticBody2D" parent="Ground2"]
 position = Vector2( -208, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground2/Grounds4"]
 margin_left = -16.0
@@ -473,6 +541,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds5" type="StaticBody2D" parent="Ground2"]
 position = Vector2( -176, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground2/Grounds5"]
 margin_left = -16.0
@@ -486,6 +556,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds6" type="StaticBody2D" parent="Ground2"]
 position = Vector2( -144, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground2/Grounds6"]
 margin_left = -16.0
@@ -499,6 +571,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds7" type="StaticBody2D" parent="Ground2"]
 position = Vector2( -112, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground2/Grounds7"]
 margin_left = -16.0
@@ -512,6 +586,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds8" type="StaticBody2D" parent="Ground2"]
 position = Vector2( -80, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground2/Grounds8"]
 margin_left = -16.0
@@ -525,6 +601,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds9" type="StaticBody2D" parent="Ground2"]
 position = Vector2( -48, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground2/Grounds9"]
 margin_left = -16.0
@@ -538,6 +616,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds10" type="StaticBody2D" parent="Ground2"]
 position = Vector2( -16, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground2/Grounds10"]
 margin_left = -16.0
@@ -551,6 +631,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds11" type="StaticBody2D" parent="Ground2"]
 position = Vector2( 16, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground2/Grounds11"]
 margin_left = -16.0
@@ -564,6 +646,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds12" type="StaticBody2D" parent="Ground2"]
 position = Vector2( 48, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground2/Grounds12"]
 margin_left = -16.0
@@ -577,6 +661,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds13" type="StaticBody2D" parent="Ground2"]
 position = Vector2( 80, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground2/Grounds13"]
 margin_left = -16.0
@@ -590,6 +676,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds14" type="StaticBody2D" parent="Ground2"]
 position = Vector2( 112, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground2/Grounds14"]
 margin_left = -16.0
@@ -603,6 +691,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds15" type="StaticBody2D" parent="Ground2"]
 position = Vector2( 144, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground2/Grounds15"]
 margin_left = -16.0
@@ -616,6 +706,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds16" type="StaticBody2D" parent="Ground2"]
 position = Vector2( 176, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground2/Grounds16"]
 margin_left = -16.0
@@ -629,6 +721,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds17" type="StaticBody2D" parent="Ground2"]
 position = Vector2( 208, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground2/Grounds17"]
 margin_left = -16.0
@@ -642,6 +736,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds18" type="StaticBody2D" parent="Ground2"]
 position = Vector2( 240, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground2/Grounds18"]
 margin_left = -16.0
@@ -655,6 +751,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds19" type="StaticBody2D" parent="Ground2"]
 position = Vector2( 272, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground2/Grounds19"]
 margin_left = -16.0
@@ -668,6 +766,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds20" type="StaticBody2D" parent="Ground2"]
 position = Vector2( 304, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground2/Grounds20"]
 margin_left = -16.0
@@ -681,6 +781,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds21" type="StaticBody2D" parent="Ground2"]
 position = Vector2( 336, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground2/Grounds21"]
 margin_left = -16.0
@@ -694,6 +796,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds22" type="StaticBody2D" parent="Ground2"]
 position = Vector2( 368, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground2/Grounds22"]
 margin_left = -16.0
@@ -707,6 +811,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds23" type="StaticBody2D" parent="Ground2"]
 position = Vector2( 400, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground2/Grounds23"]
 margin_left = -16.0
@@ -720,6 +826,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds24" type="StaticBody2D" parent="Ground2"]
 position = Vector2( 432, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground2/Grounds24"]
 margin_left = -16.0
@@ -733,6 +841,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds25" type="StaticBody2D" parent="Ground2"]
 position = Vector2( 464, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground2/Grounds25"]
 margin_left = -16.0
@@ -746,6 +856,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds26" type="StaticBody2D" parent="Ground2"]
 position = Vector2( 496, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground2/Grounds26"]
 margin_left = -16.0
@@ -759,6 +871,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds27" type="StaticBody2D" parent="Ground2"]
 position = Vector2( 528, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground2/Grounds27"]
 margin_left = -16.0
@@ -772,6 +886,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds28" type="StaticBody2D" parent="Ground2"]
 position = Vector2( 560, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground2/Grounds28"]
 margin_left = -16.0
@@ -785,6 +901,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds29" type="StaticBody2D" parent="Ground2"]
 position = Vector2( 592, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground2/Grounds29"]
 margin_left = -16.0
@@ -798,6 +916,8 @@ shape = SubResource( 1 )
 
 [node name="Grounds30" type="StaticBody2D" parent="Ground2"]
 position = Vector2( 624, 0 )
+collision_layer = 4
+collision_mask = 3
 
 [node name="ColorRect" type="ColorRect" parent="Ground2/Grounds30"]
 margin_left = -16.0
@@ -839,3 +959,97 @@ color = Color( 0.478431, 0.0156863, 0.0156863, 1 )
 
 [node name="Enemy" parent="." instance=ExtResource( 3 )]
 position = Vector2( 578, 320 )
+
+[node name="Wall" type="Node2D" parent="."]
+position = Vector2( 976, 336 )
+
+[node name="Grounds" type="StaticBody2D" parent="Wall"]
+collision_layer = 4
+collision_mask = 3
+
+[node name="ColorRect" type="ColorRect" parent="Wall/Grounds"]
+margin_left = -16.0
+margin_top = -16.0
+margin_right = 16.0
+margin_bottom = 16.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall/Grounds"]
+shape = SubResource( 1 )
+
+[node name="Grounds2" type="StaticBody2D" parent="Wall"]
+position = Vector2( 0, -32 )
+collision_layer = 4
+collision_mask = 3
+
+[node name="ColorRect" type="ColorRect" parent="Wall/Grounds2"]
+margin_left = -16.0
+margin_top = -16.0
+margin_right = 16.0
+margin_bottom = 16.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall/Grounds2"]
+shape = SubResource( 1 )
+
+[node name="Grounds3" type="StaticBody2D" parent="Wall"]
+position = Vector2( 0, -64 )
+collision_layer = 4
+collision_mask = 3
+
+[node name="ColorRect" type="ColorRect" parent="Wall/Grounds3"]
+margin_left = -16.0
+margin_top = -16.0
+margin_right = 16.0
+margin_bottom = 16.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall/Grounds3"]
+shape = SubResource( 1 )
+
+[node name="Wall2" type="Node2D" parent="."]
+position = Vector2( -16, 336 )
+
+[node name="Grounds" type="StaticBody2D" parent="Wall2"]
+collision_layer = 4
+collision_mask = 3
+
+[node name="ColorRect" type="ColorRect" parent="Wall2/Grounds"]
+margin_left = -16.0
+margin_top = -16.0
+margin_right = 16.0
+margin_bottom = 16.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall2/Grounds"]
+shape = SubResource( 1 )
+
+[node name="Grounds2" type="StaticBody2D" parent="Wall2"]
+position = Vector2( 0, -32 )
+collision_layer = 4
+collision_mask = 3
+
+[node name="ColorRect" type="ColorRect" parent="Wall2/Grounds2"]
+margin_left = -16.0
+margin_top = -16.0
+margin_right = 16.0
+margin_bottom = 16.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall2/Grounds2"]
+shape = SubResource( 1 )
+
+[node name="Grounds3" type="StaticBody2D" parent="Wall2"]
+position = Vector2( 0, -64 )
+collision_layer = 4
+collision_mask = 3
+
+[node name="ColorRect" type="ColorRect" parent="Wall2/Grounds3"]
+margin_left = -16.0
+margin_top = -16.0
+margin_right = 16.0
+margin_bottom = 16.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall2/Grounds3"]
+shape = SubResource( 1 )
