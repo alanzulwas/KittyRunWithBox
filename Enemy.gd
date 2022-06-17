@@ -2,28 +2,34 @@ extends KinematicBody2D
 
 var target = Vector2.ZERO
 var velocity = Vector2.ZERO
-var is_moving_right = true
+export var is_moving_right = true
 var targettinCharacter = false
 export (int) var speed = 200
 
 onready var Map = get_node("../").name
 onready var Chara = get_node("/root/"+Map+"/Sprite")
 
+func _ready():
+	if !is_moving_right :
+		scale.x = -scale.x
+
 func _physics_process(delta):
 	delta = delta
-	if targettinCharacter:
+	if targettinCharacter and Chara.isMove:
+		Chara.playerAlive = false
 		_move_to_object()
 	else : 
 		_enemyMove()
 		_detectTurnAround()
 
 func _on_DetectPlayer_body_entered(body):
-	if body.is_in_group("Player") and Chara.isMove:
+	if body.is_in_group("Player"):
 		targettinCharacter = true
-		target = body.global_position	
+		target = body.global_position
 
 func _on_DetectPlayer_body_exited(body):
-	targettinCharacter = false
+	if body.is_in_group("Player"):
+		targettinCharacter = false
 
 func _move_to_object():
 	if global_position.distance_to(target) > 5:
@@ -44,6 +50,3 @@ func _detectTurnAround():
 		print("osdojkdsaj")
 		is_moving_right = !is_moving_right
 		scale.x = -scale.x
-
-
-
