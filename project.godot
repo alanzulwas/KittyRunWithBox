@@ -30,6 +30,14 @@ config/name="Game Jam Cobaan"
 run/main_scene="res://Map/Map1.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/width=600
+window/size/height=1024
+window/size/resizable=false
+window/energy_saving/keep_screen_on=false
+window/handheld/orientation="portrait"
+
 [global]
 
 layer=false

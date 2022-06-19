@@ -21,7 +21,8 @@ func _physics_process(delta):
 	delta = delta
 	if playerAlive:
 		_move_to_mouse()
-	$Label.text = str(isMove)
+	else :
+		$Label.text = str("Mati")
 	
 func _move_to_mouse():
 	if target:
@@ -39,6 +40,8 @@ func _pintu_area_entered(area):
 	if area.is_in_group("Pintu"):
 		$PopUp_Pintu.visible = true
 		setDoorName(area.name)
+	if area.is_in_group("Finish"):
+		$Label.text = str("Finish")
 
 func _pintu_area_exited(area):
 	if area.is_in_group("Pintu"):

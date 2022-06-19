@@ -46,5 +46,15 @@ margin_bottom = -16.0
 mouse_filter = 2
 color = Color( 0.823529, 0.12549, 0.12549, 1 )
 
+[node name="Lighter" type="Node2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="Lighter"]
+margin_left = 16.0
+margin_top = -32.0
+margin_right = 96.0
+margin_bottom = 32.0
+mouse_filter = 2
+color = Color( 0.960784, 0.576471, 0.0784314, 0.490196 )
+
 [connection signal="body_entered" from="DetectPlayer" to="." method="_on_DetectPlayer_body_entered"]
 [connection signal="body_exited" from="DetectPlayer" to="." method="_on_DetectPlayer_body_exited"]

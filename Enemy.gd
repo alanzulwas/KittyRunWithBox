@@ -47,6 +47,5 @@ func _enemyMove():
 
 func _detectTurnAround():
 	if $RayCast2D.is_colliding():
-		print("osdojkdsaj")
 		is_moving_right = !is_moving_right
 		scale.x = -scale.x
