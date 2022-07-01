@@ -127,13 +127,14 @@ anchor_bottom = 0.973
 margin_left = -8.0
 margin_top = 0.200001
 margin_right = -8.0
-margin_bottom = 0.199951
+margin_bottom = 0.200012
 mouse_filter = 2
 
 [node name="PanningCamera2D" type="Camera2D" parent="."]
 position = Vector2( 909, 273.448 )
 current = true
 script = ExtResource( 2 )
+_target_zoom = 1.0
 
 [node name="=====WALL=====" type="Node2D" parent="."]
 
@@ -2076,16 +2077,16 @@ color = Color( 0, 0, 0, 1 )
 
 [node name="Finish" type="Sprite" parent="."]
 position = Vector2( 164, 699.448 )
-scale = Vector2( 0.077051, 0.0670732 )
+scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 5 )
 
 [node name="Area2D" type="Area2D" parent="Finish" groups=["Finish"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Finish/Area2D"]
-position = Vector2( 0, 7.45703 )
+position = Vector2( 0, 7.45752 )
 shape = SubResource( 23 )
 
-[node name="Sprite" parent="." instance=ExtResource( 1 )]
+[node name="Character" parent="." instance=ExtResource( 1 )]
 position = Vector2( 914, 331.448 )
 z_index = 1
 

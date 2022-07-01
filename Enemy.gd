@@ -7,7 +7,7 @@ var targettinCharacter = false
 export (int) var speed = 200
 
 onready var Map = get_node("../").name
-onready var Chara = get_node("/root/"+Map+"/Sprite")
+onready var Chara = get_node("/root/"+Map+"/Character")
 
 func _ready():
 	if !is_moving_right :

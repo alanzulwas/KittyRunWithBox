@@ -27,8 +27,12 @@ _global_script_class_icons={
 [application]
 
 config/name="Game Jam Cobaan"
-run/main_scene="res://Map/Map1.tscn"
+run/main_scene="res://Map/MapProlog.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+functionExit="*res://getout.gd"
 
 [display]
 
