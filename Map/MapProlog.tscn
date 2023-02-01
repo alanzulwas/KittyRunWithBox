@@ -1,0 +1,359 @@
+[gd_scene load_steps=28 format=2]
+
+[ext_resource path="res://Sprite.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Camera2D.gd" type="Script" id=2]
+[ext_resource path="res://Asset/sateg5.png" type="Texture" id=3]
+[ext_resource path="res://Asset/doorshadowright.png" type="Texture" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 12.5, 17.138 )
+
+[sub_resource type="RectangleShape2D" id=24]
+extents = Vector2( 1141.5, 13.5 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 45.5, 81 )
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 1080, 666 )
+
+[sub_resource type="AtlasTexture" id=4]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 1080, 0, 1080, 666 )
+
+[sub_resource type="AtlasTexture" id=5]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 2160, 0, 1080, 666 )
+
+[sub_resource type="AtlasTexture" id=6]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 3240, 0, 1080, 666 )
+
+[sub_resource type="AtlasTexture" id=7]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 0, 666, 1080, 666 )
+
+[sub_resource type="AtlasTexture" id=8]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 1080, 666, 1080, 666 )
+
+[sub_resource type="AtlasTexture" id=9]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 2160, 666, 1080, 666 )
+
+[sub_resource type="AtlasTexture" id=10]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 3240, 666, 1080, 666 )
+
+[sub_resource type="AtlasTexture" id=11]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 0, 1332, 1080, 666 )
+
+[sub_resource type="AtlasTexture" id=12]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 1080, 1332, 1080, 666 )
+
+[sub_resource type="AtlasTexture" id=13]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 0, 1332, 1080, 666 )
+
+[sub_resource type="AtlasTexture" id=14]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 3240, 666, 1080, 666 )
+
+[sub_resource type="AtlasTexture" id=15]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 2160, 666, 1080, 666 )
+
+[sub_resource type="AtlasTexture" id=16]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 1080, 666, 1080, 666 )
+
+[sub_resource type="AtlasTexture" id=17]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 0, 666, 1080, 666 )
+
+[sub_resource type="AtlasTexture" id=18]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 3240, 0, 1080, 666 )
+
+[sub_resource type="AtlasTexture" id=19]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 2160, 0, 1080, 666 )
+
+[sub_resource type="AtlasTexture" id=20]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 1080, 0, 1080, 666 )
+
+[sub_resource type="AtlasTexture" id=21]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 1080, 666 )
+
+[sub_resource type="SpriteFrames" id=22]
+animations = [ {
+"frames": [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ) ],
+"loop": false,
+"name": "openDoor",
+"speed": 30.0
+} ]
+
+[node name="MapProlog" type="Control"]
+anchor_top = -0.027
+anchor_right = 1.0
+anchor_bottom = 0.973
+margin_left = -8.0
+margin_top = 0.200001
+margin_right = -8.0
+margin_bottom = 0.200012
+mouse_filter = 2
+
+[node name="PanningCamera2D" type="Camera2D" parent="."]
+position = Vector2( -336, 273.448 )
+current = true
+zoom = Vector2( 1.5, 1.5 )
+script = ExtResource( 2 )
+_target_zoom = 1.0
+
+[node name="=====WALL=====" type="Node2D" parent="."]
+
+[node name="Wall" type="Node2D" parent="."]
+position = Vector2( 1610, 336 )
+scale = Vector2( 2, 2 )
+
+[node name="Grounds" type="StaticBody2D" parent="Wall"]
+collision_layer = 4
+collision_mask = 3
+
+[node name="ColorRect" type="ColorRect" parent="Wall/Grounds"]
+visible = false
+margin_left = -16.0
+margin_top = -16.0
+margin_right = 16.0
+margin_bottom = 16.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall/Grounds"]
+position = Vector2( 0, -4.138 )
+shape = SubResource( 1 )
+
+[node name="Grounds2" type="StaticBody2D" parent="Wall"]
+position = Vector2( 0, -32 )
+collision_layer = 4
+collision_mask = 3
+
+[node name="ColorRect" type="ColorRect" parent="Wall/Grounds2"]
+visible = false
+margin_left = -16.0
+margin_top = -16.0
+margin_right = 16.0
+margin_bottom = 16.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall/Grounds2"]
+shape = SubResource( 1 )
+
+[node name="Grounds3" type="StaticBody2D" parent="Wall"]
+position = Vector2( 0, -64 )
+collision_layer = 4
+collision_mask = 3
+
+[node name="ColorRect" type="ColorRect" parent="Wall/Grounds3"]
+visible = false
+margin_left = -16.0
+margin_top = -16.0
+margin_right = 16.0
+margin_bottom = 16.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall/Grounds3"]
+shape = SubResource( 1 )
+
+[node name="Wall2" type="Node2D" parent="."]
+position = Vector2( -534, 336 )
+scale = Vector2( 2, 2 )
+
+[node name="Grounds" type="StaticBody2D" parent="Wall2"]
+collision_layer = 4
+collision_mask = 3
+
+[node name="ColorRect" type="ColorRect" parent="Wall2/Grounds"]
+visible = false
+margin_left = -16.0
+margin_top = -16.0
+margin_right = 16.0
+margin_bottom = 16.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall2/Grounds"]
+shape = SubResource( 1 )
+
+[node name="Grounds2" type="StaticBody2D" parent="Wall2"]
+position = Vector2( 0, -32 )
+collision_layer = 4
+collision_mask = 3
+
+[node name="ColorRect" type="ColorRect" parent="Wall2/Grounds2"]
+visible = false
+margin_left = -16.0
+margin_top = -16.0
+margin_right = 16.0
+margin_bottom = 16.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall2/Grounds2"]
+shape = SubResource( 1 )
+
+[node name="Grounds3" type="StaticBody2D" parent="Wall2"]
+position = Vector2( 0, -64 )
+collision_layer = 4
+collision_mask = 3
+
+[node name="ColorRect" type="ColorRect" parent="Wall2/Grounds3"]
+visible = false
+margin_left = -16.0
+margin_top = -16.0
+margin_right = 16.0
+margin_bottom = 16.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall2/Grounds3"]
+shape = SubResource( 1 )
+
+[node name="=====GROUND=====" type="Node2D" parent="."]
+
+[node name="Ground1" type="Node2D" parent="."]
+position = Vector2( 320, 368 )
+
+[node name="Grounds" type="StaticBody2D" parent="Ground1"]
+position = Vector2( 213, 3.448 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground1/Grounds"]
+shape = SubResource( 24 )
+
+[node name="Background" type="Sprite" parent="Ground1"]
+position = Vector2( -273.47, -160.052 )
+scale = Vector2( 0.581944, 0.542042 )
+z_index = -1
+texture = ExtResource( 3 )
+
+[node name="Background2" type="Sprite" parent="Ground1"]
+position = Vector2( 354.78, -160.052 )
+scale = Vector2( 0.582, 0.542 )
+z_index = -1
+texture = ExtResource( 3 )
+
+[node name="Background3" type="Sprite" parent="Ground1"]
+position = Vector2( 983.28, -160.052 )
+scale = Vector2( 0.582, 0.542 )
+z_index = -1
+texture = ExtResource( 3 )
+
+[node name="Background4" type="Sprite" parent="Ground1"]
+position = Vector2( 1611.28, -160.052 )
+scale = Vector2( 0.582, 0.542 )
+z_index = -1
+texture = ExtResource( 3 )
+
+[node name="Background5" type="Sprite" parent="Ground1"]
+position = Vector2( -901.72, -160.052 )
+scale = Vector2( 0.582, 0.542 )
+z_index = -1
+texture = ExtResource( 3 )
+
+[node name="=====OTHER=====" type="Node2D" parent="."]
+
+[node name="PARALAXBG" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="PARALAXBG"]
+motion_mirroring = Vector2( 1320, 720 )
+
+[node name="ColorRect" type="ColorRect" parent="PARALAXBG/ParallaxLayer"]
+margin_left = -1874.0
+margin_right = 2343.0
+margin_bottom = 1551.0
+mouse_filter = 2
+color = Color( 0, 0, 0, 1 )
+
+[node name="Character" parent="." instance=ExtResource( 1 )]
+position = Vector2( -424, 315.448 )
+scale = Vector2( 2, 2 )
+z_index = 1
+speed = 300
+posYtarget = 150
+
+[node name="PintuFinish" type="Area2D" parent="." groups=["PintuFinish"]]
+position = Vector2( 1268, 266.448 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PintuFinish"]
+position = Vector2( 6.5, 4 )
+shape = SubResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="PintuFinish"]
+position = Vector2( -4, -3.25001 )
+scale = Vector2( 0.277, 0.304 )
+frames = SubResource( 22 )
+animation = "openDoor"
+frame = 18
+playing = true
+
+[node name="Notif1" type="ColorRect" parent="."]
+anchor_left = -0.613
+anchor_top = 0.113
+anchor_right = -0.147
+anchor_bottom = 0.246
+margin_left = -8.19998
+margin_top = -0.264008
+margin_right = 8.2
+margin_bottom = 2.54399
+color = Color( 0.439216, 0.231373, 0.231373, 1 )
+
+[node name="Label" type="Label" parent="Notif1"]
+anchor_right = 1.027
+anchor_bottom = 0.978
+margin_right = -7.99203
+margin_bottom = 0.0579987
+text = "Geser untuk menggerakkan camera"
+align = 1
+valign = 1
+
+[node name="Notif2" type="ColorRect" parent="."]
+anchor_left = -0.613
+anchor_top = 0.113
+anchor_right = -0.147
+anchor_bottom = 0.246
+margin_left = 495.8
+margin_top = -0.264008
+margin_right = 512.2
+margin_bottom = 2.54399
+color = Color( 0.439216, 0.231373, 0.231373, 1 )
+
+[node name="Label" type="Label" parent="Notif2"]
+anchor_right = 1.027
+anchor_bottom = 0.978
+margin_right = -7.99203
+margin_bottom = 0.0579987
+text = "Klk 2 kali pada kiri char untuk jalan kiri
+
+Klk 2 kali pada kanan char untuk jalan kanan"
+align = 1
+valign = 1
